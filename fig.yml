@@ -1,7 +1,7 @@
 web:
   image: marcko/docker-express
   volumes:
-    - ./:var/app
+    - ./:var/www
    ports:
      - "3000:3000"
    links:
