@@ -59,3 +59,7 @@ Linux
 ####Run app
 
 	fig up -d
+
+
+IN BUILDING 
+___________________________
