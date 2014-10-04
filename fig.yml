@@ -1,5 +1,5 @@
 web:
-  image: marcko/docker-express
+  image: marcko/docker-expressv2
   volumes:
     - ./:var/www
   ports:
