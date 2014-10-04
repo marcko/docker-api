@@ -1,0 +1,19 @@
+web:
+  image: marcko/docker-express
+  volumes:
+    - ./:var/app
+   ports:
+     - "3000:3000"
+   links:
+     - "mongodb:mongodb"
+   environment:
+     NODE_ENV:  development
+     port: 3000
+mongodb:
+  image: luis/mongodb
+  volumes_from:
+    - MONGODB_DATA
+  expose:
+    - "27017"
+  environment:
+    DB: api
