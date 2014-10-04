@@ -2,13 +2,13 @@ web:
   image: marcko/docker-express
   volumes:
     - ./:var/www
-   ports:
-     - "3000:3000"
-   links:
-     - "mongodb:mongodb"
-   environment:
-     NODE_ENV:  development
-     port: 3000
+  ports:
+    - "3000:3000"
+  links:
+    - "mongodb:mongodb"
+  environment:
+    NODE_ENV:  development
+    port: 3000
 mongodb:
   image: luis/mongodb
   volumes_from:
